@@ -17,8 +17,6 @@ func _process(delta):
 	
 	# Enforces a smooth linear interpolation, artificially creating acceleration
 	velocity = velocity.lerp(target_velocity, 1 - exp(-delta * ACCELERATION_SMOOTHING))
-	print("target_velocity: %s" % target_velocity)
-	print("velocity: %s" % velocity)
 	
 	move_and_slide()
 	

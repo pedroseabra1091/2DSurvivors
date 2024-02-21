@@ -24,6 +24,11 @@ window/size/window_height_override=1080
 window/stretch/mode="viewport"
 window/snap/snap_2d_transforms_to_pixel=true
 
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
 [input]
 
 move_left={
@@ -56,6 +61,8 @@ move_down={
 2d_physics/layer_1="Terrain"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Enemy"
+2d_physics/layer_4="EnemyCollision"
+2d_physics/layer_5="PlayerPickup"
 
 [rendering]
 
