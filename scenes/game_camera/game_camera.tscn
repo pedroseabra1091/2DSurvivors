@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://devh1ii7msgd4"]
+
+[ext_resource type="Script" path="res://scenes/game_camera/game_camera.gd" id="1_ajaon"]
+
+[node name="GameCamera" type="Camera2D"]
+position = Vector2(330, 192)
+editor_draw_limits = true
+script = ExtResource("1_ajaon")
