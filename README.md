@@ -1,5 +1,7 @@
 # 2D Survivors
 
+![repo-banner](public/repo-banner.png)
+
 This repo covers many aspects of creating a survivors style game including:
   - Auto-attacking abilities;
   - Hordes of enemies that increase in difficulty over time;
