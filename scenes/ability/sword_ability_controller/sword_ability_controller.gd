@@ -16,8 +16,12 @@ func on_timer_timeout():
 		return
 		
 	var enemies = get_tree().get_nodes_in_group("enemy")
-	enemies = enemies.filter(func(enemy: Node2D):
-		# Using squared_to because it requires less computation than square root
+	enemies = enemies.filter(func(enemy: Node2D): 
+		# Calculating the actual distance between two points involves taking the square
+		# root of the squared distance, which is computationally expensive. However, 
+		# for comparing distances, the actual distance isn't required – knowing which 
+		# distance is smaller suffices. By comparing squared distances, you avoid the 
+		#costly square root operation, making the calculation faster.
 		return enemy.global_position.distance_squared_to(player.global_position) < pow(MAX_RANGE, 2)
 	)
 	
