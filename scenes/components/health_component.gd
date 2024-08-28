@@ -10,7 +10,7 @@ func _ready():
 	current_health = max_health
 
 func damage(damage_amount: float):
-	current_health = max(max_health - damage_amount, 0)
+	current_health = max(current_health - damage_amount, 0)
 	# Call function only on idle frames
 	Callable(check_death).call_deferred()
 	
